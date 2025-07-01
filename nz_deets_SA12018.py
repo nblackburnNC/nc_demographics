@@ -87,6 +87,7 @@ def find_nz_fields(fnSwitch):
     # Households_totalNZ-wide_format_updated_16-7-20.csv
 def get_median_rent():
     return {'Census_2018_Weekly_rent_Median_households_in_rented_occupied_private_dwellings' : 'median_rent'}
+
 def get_tenure_type():
     return {
         'Census_2018_Sector_of_landlord_1_Private_person_trust_or_business_households_in_rented_occupied_private_dwellings' : 'Private_Person_Trust_or_Business',
@@ -99,6 +100,7 @@ def get_tenure_type():
         'Census_2018_Tenure_of_household_002_Dwelling_not_owned_and_not_held_in_a_family_trust_households_in_occupied_private_dwellings' : 'Not_Owned_and_Not_Held_in_a_Family_Trust',
         'Census_2018_Tenure_of_household_003_Dwelling_held_in_a_family_trust_households_in_occupied_private_dwellings' : 'Held_in_a_Family_Trust'
         }
+
 def get_average_household_size():
     return {'Census_2018_total_households_in_occupied_private_dwellings' : 'total_households'}
     # return {'Census_2018_total_households_in_occupied_private_dwellings' : 'Mean_Number_of_Usual_Household_Members'}

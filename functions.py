@@ -24,6 +24,8 @@ def write_to_csv(country, out_file, csv_cols, increment = ''):
         writer = csv.DictWriter(out, fieldnames = csv_cols)
         writer.writeheader()
         for data in out_file:
+            # print(data)
+            # print(out_file[data])
             writer.writerow(data)
         # for key in out_file.keys():
         #     out.write("%s,%s\n"%(key,out_file[key]))
@@ -139,7 +141,9 @@ def get_demographics(country, find_fields_only):
         #     all_demographics
         all_demographics[file] = demoDict                       
         
-    
+        # print(all_demographics)
+        # input('Press Enter to continue...')
+
     return all_demographics
 
 def create_better_dict(readfile_vals):
